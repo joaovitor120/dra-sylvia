@@ -1,0 +1,23 @@
+<svg width="306" height="72" viewBox="0 0 306 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Clínica Dr. Fernando Pimentel</title>
+  <desc id="desc">Logo profissional em tons de azul e verde com símbolo odontológico.</desc>
+  <defs>
+    <linearGradient id="markGradient" x1="8" y1="8" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="0.52" stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0F766E" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <g filter="url(#softShadow)">
+    <rect x="4" y="4" width="64" height="64" rx="18" fill="url(#markGradient)"/>
+    <path d="M36.1 18.8c4.2-3.7 12.1-2.3 15.1 3.1 3.9 7-1.4 27.2-6.6 31.4-2.1 1.7-4.2.8-4.8-1.8l-1.5-7.1c-.5-2.4-3.9-2.4-4.4 0l-1.5 7.1c-.6 2.6-2.7 3.5-4.8 1.8-5.2-4.2-10.5-24.4-6.6-31.4 3-5.4 10.9-6.8 15.1-3.1 1.3 1.1 3.7 1.1 5 0Z" fill="white" opacity="0.96"/>
+    <path d="M48.5 25.2c-1.1-2-3.6-3.4-6.2-3.5" stroke="#DFFCF8" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M22.7 17.5c-1.6 1.2-2.8 2.7-3.7 4.5" stroke="white" stroke-opacity="0.72" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="84" y="30" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800" letter-spacing="0">Clínica Dr. Fernando</text>
+  <text x="84" y="51" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800" letter-spacing="0">Pimentel</text>
+  <text x="84" y="66" fill="#0F766E" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.8">ODONTOLOGIA • VITÓRIA/ES</text>
+</svg>

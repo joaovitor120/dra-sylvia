@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clínica Dr. Fernando Pimentel | Dentista em Vitória/ES</title>
+    <meta
+      name="description"
+      content="Agende sua consulta odontológica pelo WhatsApp na Clínica Dr. Fernando Pimentel, no Centro de Vitória/ES. Atendimento humanizado, lembretes de consulta e cuidado para o seu sorriso."
+    />
+    <meta
+      name="keywords"
+      content="dentista em Vitória, clínica odontológica Vitória, dentista Centro de Vitória, clareamento dental Vitória, implante dentário Vitória, limpeza dental Vitória"
+    />
+    <meta name="theme-color" content="#0EA5A4" />
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("clinic-theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = savedTheme || (prefersDark ? "dark" : "light");
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
+    <link rel="icon" href="assets/logo-fernando-pimentel.svg" type="image/svg+xml" />
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Ir para o conteúdo</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Clínica Dr. Fernando Pimentel">
+        <img src="assets/logo-fernando-pimentel.svg" alt="Clínica Dr. Fernando Pimentel" />
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#tratamentos">Tratamentos</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Alternar modo escuro" aria-pressed="false">
+        <span class="theme-toggle-icon" aria-hidden="true"></span>
+        <span data-theme-label>Modo escuro</span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="inicio">
+        <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="container hero-content reveal">
+          <p class="eyebrow">Clínica odontológica no Centro de Vitória/ES</p>
+          <h1>Seu sorriso merece cuidado, atenção e confiança</h1>
+          <p class="hero-subtitle">
+            Agende sua consulta odontológica pelo WhatsApp e dê o primeiro passo para cuidar da sua saúde,
+            autoestima e bem-estar.
+          </p>
+          <p class="hero-support">
+            Na Clínica Dr. Fernando Pimentel, você encontra atendimento odontológico em Vitória/ES com cuidado humano,
+            localização central e facilidade para agendar pelo WhatsApp.
+          </p>
+          <div class="hero-actions" aria-label="Ações principais">
+            <a class="button button-secondary" href="#tratamentos">Conhecer os tratamentos</a>
+          </div>
+          <ul class="hero-bullets" aria-label="Destaques da clínica">
+            <li>Sorriso mais saudável e confiante</li>
+            <li>Atendimento humanizado</li>
+            <li>Lembretes antes da consulta</li>
+            <li>Retornos organizados para você não esquecer</li>
+            <li>Clínica no Centro de Vitória/ES</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section intro-band reveal" aria-labelledby="emocional-title">
+        <div class="container intro-grid">
+          <div>
+            <p class="eyebrow">Cuidado que acompanha você</p>
+            <h2 id="emocional-title">Sorrir com confiança muda a forma como você se apresenta ao mundo.</h2>
+          </div>
+          <p>
+            Um sorriso bem cuidado melhora sua autoestima, sua segurança e até a forma como você conversa.
+            Cuidar dos dentes não é só estética. É saúde, conforto e qualidade de vida.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="beneficios" aria-labelledby="beneficios-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Mais tranquilidade para você</p>
+            <h2 id="beneficios-title">Organize seu cuidado sem complicação</h2>
+            <p>Seu próximo sorriso mais confiante pode começar com uma simples mensagem no WhatsApp.</p>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="benefit-card reveal">
+              <span class="icon-badge" aria-hidden="true">01</span>
+              <h3>Agendamento fácil pelo WhatsApp</h3>
+              <p>Você não precisa ligar nem esperar. Chame no WhatsApp e organize sua consulta de forma simples.</p>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="icon-badge" aria-hidden="true">02</span>
+              <h3>Lembrete antes da consulta</h3>
+              <p>Você recebe um lembrete antes do horário marcado para não esquecer do compromisso.</p>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="icon-badge" aria-hidden="true">03</span>
+              <h3>Retornos mais organizados</h3>
+              <p>Quando for hora de voltar, a clínica pode te lembrar para manter seu cuidado em dia.</p>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="icon-badge" aria-hidden="true">04</span>
+              <h3>Atendimento mais claro</h3>
+              <p>Você recebe as informações necessárias com praticidade e sem complicação.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services-section" id="tratamentos" aria-labelledby="tratamentos-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Tratamentos odontológicos</p>
+            <h2 id="tratamentos-title">Cuidado para cada momento do seu sorriso</h2>
+            <p>Escolha o tratamento e fale com a clínica para receber orientação e encontrar o melhor horário.</p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <h3>Avaliação odontológica</h3>
+              <p>Entenda o que seu sorriso precisa com uma avaliação cuidadosa e orientação clara.</p>
+            </article>
+            <article class="service-card reveal">
+              <h3>Limpeza</h3>
+              <p>Mais saúde, frescor e leveza para o seu sorriso no dia a dia.</p>
+            </article>
+            <article class="service-card reveal">
+              <h3>Clareamento</h3>
+              <p>Realce a beleza do seu sorriso com mais brilho, confiança e autoestima.</p>
+            </article>
+            <article class="service-card reveal">
+              <h3>Manutenção de aparelho</h3>
+              <p>Acompanhe a evolução do seu tratamento com cuidado e regularidade.</p>
+            </article>
+            <article class="service-card reveal">
+              <h3>Implante dentário</h3>
+              <p>Volte a sorrir, mastigar e conversar com mais segurança.</p>
+            </article>
+            <article class="service-card reveal">
+              <h3>Urgência odontológica</h3>
+              <p>Está com dor ou desconforto? Fale com a clínica e busque atendimento.</p>
+            </article>
+            <article class="service-card reveal">
+              <h3>Retorno e acompanhamento</h3>
+              <p>Continue seu cuidado com lembretes e acompanhamento para não perder o momento certo de voltar.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section location-section" id="localizacao" aria-labelledby="localizacao-title">
+        <div class="container location-layout">
+          <div class="location-copy reveal">
+            <p class="eyebrow">Localização central</p>
+            <h2 id="localizacao-title">Estamos no Centro de Vitória</h2>
+            <p>Rua Alberto Oliveira Santos, 42 — Centro, Vitória/ES</p>
+            <ul class="location-list">
+              <li>Horário de atendimento: 8h às 17h</li>
+              <li>Estacionamento disponível</li>
+              <li>Comunicação rápida pelo WhatsApp</li>
+            </ul>
+            <div class="location-actions">
+              <a class="button button-primary" href="https://maps.google.com/?q=Rua+Alberto+Oliveira+Santos,+42,+Centro,+Vitória,+ES" target="_blank" rel="noopener">Abrir no Google Maps</a>
+            </div>
+          </div>
+          <div class="map-card reveal">
+            <iframe
+              title="Mapa da Clínica Dr. Fernando Pimentel"
+              src="https://www.google.com/maps?q=Rua+Alberto+Oliveira+Santos,+42,+Centro,+Vitória,+ES&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials-section" aria-labelledby="depoimentos-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Experiências de pacientes</p>
+            <h2 id="depoimentos-title">Confiança também nasce nos detalhes</h2>
+          </div>
+
+          <div class="testimonials-grid">
+            <!-- Replace these placeholder testimonials with real patient testimonials before production. -->
+            <blockquote class="testimonial-card reveal">
+              <p>“Consegui agendar pelo WhatsApp de forma rápida e fui lembrada antes da consulta. Isso me ajudou muito.”</p>
+              <cite>Mariana S.</cite>
+            </blockquote>
+            <!-- Replace these placeholder testimonials with real patient testimonials before production. -->
+            <blockquote class="testimonial-card reveal">
+              <p>“Gostei do cuidado no atendimento e da facilidade para marcar o horário.”</p>
+              <cite>Carlos M.</cite>
+            </blockquote>
+            <!-- Replace these placeholder testimonials with real patient testimonials before production. -->
+            <blockquote class="testimonial-card reveal">
+              <p>“A clínica passa confiança. Foi tudo simples, desde o agendamento até o atendimento.”</p>
+              <cite>Renata A.</cite>
+            </blockquote>
+            <!-- Replace these placeholder testimonials with real patient testimonials before production. -->
+            <blockquote class="testimonial-card reveal">
+              <p>“Localização fácil, atendimento organizado e comunicação clara.”</p>
+              <cite>João P.</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+        <div class="container faq-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Dúvidas frequentes</p>
+            <h2 id="faq-title">Antes de agendar</h2>
+            <p>Se ainda tiver alguma dúvida, fale com a clínica pelo WhatsApp.</p>
+          </div>
+          <div class="faq-list reveal">
+            <details>
+              <summary>Como faço para agendar?</summary>
+              <p>Clique no botão de WhatsApp, envie uma mensagem e escolha o melhor horário disponível.</p>
+            </details>
+            <details>
+              <summary>A clínica aceita plano odontológico?</summary>
+              <p>No momento, a clínica não aceita plano odontológico. Para mais informações, entre em contato pelo WhatsApp.</p>
+            </details>
+            <details>
+              <summary>A clínica atende crianças?</summary>
+              <p>Sim, o atendimento é realizado para crianças a partir de 5 anos.</p>
+            </details>
+            <details>
+              <summary>Onde fica a clínica?</summary>
+              <p>A clínica fica na Rua Alberto Oliveira Santos, 42 — Centro, Vitória/ES.</p>
+            </details>
+            <details>
+              <summary>Recebo lembrete da consulta?</summary>
+              <p>Sim. Você pode receber lembretes antes da consulta e também lembretes de retorno, ajudando a manter seu cuidado em dia.</p>
+            </details>
+            <details>
+              <summary>Posso remarcar pelo WhatsApp?</summary>
+              <p>Sim. Você pode solicitar a remarcação pelo WhatsApp de forma simples.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-labelledby="final-cta-title">
+        <div class="container final-cta-content reveal">
+          <h2 id="final-cta-title">Seu sorriso pode começar a mudar com uma simples mensagem</h2>
+          <p>
+            Não deixe o cuidado com você para depois. Agende sua consulta pelo WhatsApp e dê o próximo passo para
+            um sorriso mais saudável, bonito e confiante.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <img class="footer-logo" src="assets/logo-fernando-pimentel.svg" alt="Clínica Dr. Fernando Pimentel" />
+          <p>As informações enviadas pelo WhatsApp são usadas apenas para atendimento e agendamento.</p>
+        </div>
+        <address>
+          <strong>Clínica Dr. Fernando Pimentel</strong><br />
+          Rua Alberto Oliveira Santos, 42 — Centro, Vitória/ES<br />
+          Horário: 8h às 17h
+        </address>
+      </div>
+    </footer>
+
+    <a class="floating-whatsapp" href="https://wa.me/5527996522668?text=Olá,%20quero%20agendar%20uma%20consulta" target="_blank" rel="noopener" aria-label="Agendar minha consulta pelo WhatsApp">
+      Agendar pelo WhatsApp
+    </a>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
