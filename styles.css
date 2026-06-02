@@ -297,6 +297,14 @@ h3 {
   background: #ffffff;
 }
 
+.doctor-placeholder .doctor-photo {
+  min-height: 560px;
+  padding: 0;
+  object-fit: cover;
+  object-position: center top;
+  background: #101010;
+}
+
 .placeholder-label {
   position: absolute;
   left: 24px;
@@ -409,6 +417,20 @@ h3 {
     #ffffff;
   text-align: center;
   font-weight: 900;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  min-height: 460px;
+  height: 100%;
+  padding: 0;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.profile-photo-about {
+  aspect-ratio: 4 / 5;
 }
 
 .about-list,
@@ -599,7 +621,7 @@ h3 {
 }
 
 .footer-brand-wide img {
-  width: min(920px, 100%);
+  width: min(1040px, 100%);
   max-height: 180px;
   object-fit: contain;
   margin: 0 auto;
@@ -612,8 +634,13 @@ h3 {
 .footer-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  gap: 32px;
+  gap: 42px;
   align-items: start;
+  max-width: 1040px;
+}
+
+.footer-grid address {
+  max-width: 680px;
 }
 
 .site-footer p,
@@ -635,12 +662,16 @@ h3 {
 
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+  max-width: 1040px;
   margin-top: 36px;
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   font-size: 0.9rem;
+  text-align: center;
 }
 
 .floating-whatsapp {
@@ -765,6 +796,25 @@ h3 {
 
   .footer-bottom {
     flex-direction: column;
+    gap: 8px;
+  }
+
+  .doctor-placeholder,
+  .doctor-placeholder img,
+  .doctor-placeholder .doctor-photo {
+    min-height: 0;
+    height: 500px;
+  }
+
+  .profile-photo {
+    min-height: 0;
+    height: 440px;
+  }
+
+  .doctor-placeholder .doctor-photo,
+  .profile-photo {
+    object-fit: cover;
+    object-position: center top;
   }
 }
 
@@ -796,11 +846,29 @@ h3 {
   }
 
   .doctor-placeholder,
-  .doctor-placeholder img,
   .photo-placeholder,
   .gallery-card-large .gallery-placeholder {
     min-height: 340px;
   }
+
+  .doctor-placeholder,
+  .doctor-placeholder img,
+  .doctor-placeholder .doctor-photo {
+    min-height: 0;
+    height: 430px;
+  }
+
+  .profile-photo {
+    min-height: 0;
+    height: 380px;
+  }
+
+  .doctor-placeholder .doctor-photo,
+  .profile-photo {
+    object-fit: cover;
+    object-position: center top;
+  }
+
 
   .floating-whatsapp {
     left: auto;
