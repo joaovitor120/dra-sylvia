@@ -147,6 +147,7 @@ a {
 .button-light {
   color: var(--primary-dark);
   background: white;
+  white-space: nowrap;
 }
 
 .menu-toggle {
@@ -510,6 +511,11 @@ h3 {
   align-items: center;
   justify-content: space-between;
   gap: 28px;
+}
+
+.mid-cta .button-light {
+  flex: 0 0 auto;
+  min-width: max-content;
 }
 
 .mid-cta .eyebrow,
