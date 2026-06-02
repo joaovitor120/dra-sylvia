@@ -97,6 +97,7 @@ a {
   align-items: center;
   gap: 18px;
   font-size: 0.95rem;
+  flex-wrap: nowrap;
 }
 
 .site-nav a {
@@ -123,6 +124,11 @@ a {
   border: 1px solid transparent;
   transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
   cursor: pointer;
+}
+
+.nav-cta {
+  white-space: nowrap;
+  flex: 0 0 auto;
 }
 
 .nav-cta,
@@ -745,6 +751,44 @@ h3 {
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (max-width: 1120px) {
+  .site-header {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    flex: 0 0 auto;
+  }
+
+  .site-nav {
+    display: none;
+    order: 3;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 14px 0 4px;
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav a {
+    padding: 10px 0;
+  }
+
+  .nav-cta {
+    margin-top: 4px;
+  }
 }
 
 @media (max-width: 980px) {
