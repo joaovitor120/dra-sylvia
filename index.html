@@ -1,186 +1,249 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Clínica Dr. Fernando Pimentel | Dentista em Vitória/ES</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dra. Sylvia Passamani | Oftalmologista em Vitória/ES</title>
     <meta
       name="description"
-      content="Agende sua consulta odontológica pelo WhatsApp na Clínica Dr. Fernando Pimentel, no Centro de Vitória/ES. Atendimento humanizado, lembretes de consulta e cuidado para o seu sorriso."
+      content="Agende sua consulta com a Dra. Sylvia Passamani, oftalmologista em Vitória/ES. Atendimento humanizado, cuidado com a visão e facilidade para agendar pelo WhatsApp."
     />
     <meta
       name="keywords"
-      content="dentista em Vitória, clínica odontológica Vitória, dentista Centro de Vitória, clareamento dental Vitória, implante dentário Vitória, limpeza dental Vitória"
+      content="oftalmologista Vitória, consulta oftalmológica Vitória, Dra Sylvia Passamani, exame de vista Vitória, glaucoma Vitória, lentes de contato Vitória"
     />
-    <meta name="theme-color" content="#0EA5A4" />
-    <script>
-      (() => {
-        const savedTheme = localStorage.getItem("clinic-theme");
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        const theme = savedTheme || (prefersDark ? "dark" : "light");
-        document.documentElement.dataset.theme = theme;
-        document.documentElement.style.colorScheme = theme;
-      })();
-    </script>
-    <link rel="icon" href="assets/logo-fernando-pimentel.svg" type="image/svg+xml" />
-    <link rel="preload" href="styles.css" as="style" />
+    <link rel="icon" type="image/png" href="assets/logo_dra_1.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main">Ir para o conteúdo</a>
-
     <header class="site-header" data-header>
-      <a class="brand" href="#inicio" aria-label="Clínica Dr. Fernando Pimentel">
-        <img src="assets/logo-fernando-pimentel.svg" alt="Clínica Dr. Fernando Pimentel" />
+      <a class="brand" href="#inicio" aria-label="Dra. Sylvia Passamani">
+        <img src="assets/logo_dra_1.png" alt="Marca da Dra. Sylvia Passamani" />
+        <span>
+          <strong>Dra. Sylvia Passamani</strong>
+          <small>Oftalmologista</small>
+        </span>
       </a>
 
-      <nav class="nav" aria-label="Navegação principal">
-        <a href="#tratamentos">Tratamentos</a>
-        <a href="#beneficios">Benefícios</a>
-        <a href="#localizacao">Localização</a>
-        <a href="#faq">Dúvidas</a>
-      </nav>
-
-      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Alternar modo escuro" aria-pressed="false">
-        <span class="theme-toggle-icon" aria-hidden="true"></span>
-        <span data-theme-label>Modo escuro</span>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+        Menu
       </button>
+
+      <nav id="site-nav" class="site-nav" data-nav>
+        <a href="#inicio">Início</a>
+        <a href="#procedimentos">Procedimentos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#fotos">Fotos</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#horarios">Horários</a>
+        <a class="nav-cta" href="https://wa.me/5527996522668?text=Oi%2C%20quero%20agendar%20uma%20consulta%20com%20a%20Dra.%20Sylvia." target="_blank" rel="noopener">
+          Agendar pelo WhatsApp
+        </a>
+      </nav>
     </header>
 
-    <main id="main">
-      <section class="hero" id="inicio">
-        <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
-        <div class="hero-overlay" aria-hidden="true"></div>
-        <div class="container hero-content reveal">
-          <p class="eyebrow">Clínica odontológica no Centro de Vitória/ES</p>
-          <h1>Seu sorriso merece cuidado, atenção e confiança</h1>
-          <p class="hero-subtitle">
-            Agende sua consulta odontológica pelo WhatsApp e dê o primeiro passo para cuidar da sua saúde,
-            autoestima e bem-estar.
-          </p>
-          <p class="hero-support">
-            Na Clínica Dr. Fernando Pimentel, você encontra atendimento odontológico em Vitória/ES com cuidado humano,
-            localização central e facilidade para agendar pelo WhatsApp.
-          </p>
-          <div class="hero-actions" aria-label="Ações principais">
-            <a class="button button-secondary" href="#tratamentos">Conhecer os tratamentos</a>
+    <main>
+      <section id="inicio" class="hero section-band">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Oftalmologia em Vitória/ES</p>
+            <h1>Cuidado oftalmológico com atenção, precisão e acolhimento</h1>
+            <p class="hero-lead">
+              Agende sua consulta com a Dra. Sylvia Passamani e cuide da sua visão com uma especialista em oftalmologia.
+            </p>
+            <p class="hero-support">
+              Cuidamos da saúde dos seus olhos com atenção, carinho e excelência, em um atendimento humanizado,
+              com agendamento facilitado e acompanhamento próximo.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://wa.me/5527996522668?text=Oi%2C%20quero%20agendar%20uma%20consulta%20com%20a%20Dra.%20Sylvia." target="_blank" rel="noopener">
+                Agendar pelo WhatsApp
+              </a>
+              <a class="button button-secondary" href="#procedimentos">Ver procedimentos</a>
+            </div>
+            <ul class="hero-points" aria-label="Diferenciais">
+              <li>Atendimento humanizado</li>
+              <li>Consulta oftalmológica completa</li>
+              <li>Localização central em Vitória</li>
+              <li>Lembretes antes da consulta</li>
+            </ul>
           </div>
-          <ul class="hero-bullets" aria-label="Destaques da clínica">
-            <li>Sorriso mais saudável e confiante</li>
-            <li>Atendimento humanizado</li>
-            <li>Lembretes antes da consulta</li>
-            <li>Retornos organizados para você não esquecer</li>
-            <li>Clínica no Centro de Vitória/ES</li>
-          </ul>
+
+          <div class="hero-visual reveal">
+            <div class="doctor-placeholder">
+              <img src="assets/logo_dra_2.png" alt="Identidade visual da Dra. Sylvia Passamani" />
+              <div class="placeholder-label">Identidade visual oficial da Dra. Sylvia Passamani</div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section intro-band reveal" aria-labelledby="emocional-title">
-        <div class="container intro-grid">
-          <div>
-            <p class="eyebrow">Cuidado que acompanha você</p>
-            <h2 id="emocional-title">Sorrir com confiança muda a forma como você se apresenta ao mundo.</h2>
-          </div>
-          <p>
-            Um sorriso bem cuidado melhora sua autoestima, sua segurança e até a forma como você conversa.
-            Cuidar dos dentes não é só estética. É saúde, conforto e qualidade de vida.
-          </p>
-        </div>
-      </section>
-
-      <section class="section" id="beneficios" aria-labelledby="beneficios-title">
+      <section id="procedimentos" class="section">
         <div class="container">
           <div class="section-heading reveal">
-            <p class="eyebrow">Mais tranquilidade para você</p>
-            <h2 id="beneficios-title">Organize seu cuidado sem complicação</h2>
-            <p>Seu próximo sorriso mais confiante pode começar com uma simples mensagem no WhatsApp.</p>
+            <p class="eyebrow">Atendimento oftalmológico</p>
+            <h2>Procedimentos e atendimentos oftalmológicos</h2>
+            <p>Opções informadas pela clínica para orientar o agendamento inicial pelo WhatsApp.</p>
+          </div>
+
+          <div class="cards-grid service-grid">
+            <article class="service-card reveal">
+              <span class="service-icon">👁️</span>
+              <h3>Consulta oftalmológica</h3>
+              <p>Avaliação cuidadosa para entender sua saúde ocular e orientar o melhor acompanhamento.</p>
+              <a href="https://wa.me/5527996522668?text=Oi%2C%20quero%20agendar%20uma%20consulta%20com%20a%20Dra.%20Sylvia." target="_blank" rel="noopener">Agendar avaliação</a>
+            </article>
+
+            <article class="service-card reveal">
+              <span class="service-icon">◎</span>
+              <h3>Acompanhamento de glaucoma</h3>
+              <p>Acompanhamento regular para pacientes que precisam monitorar a saúde ocular com atenção contínua.</p>
+              <a href="https://wa.me/5527996522668?text=Oi%2C%20quero%20agendar%20uma%20consulta%20com%20a%20Dra.%20Sylvia." target="_blank" rel="noopener">Agendar avaliação</a>
+            </article>
+
+            <article class="service-card reveal">
+              <span class="service-icon">◌</span>
+              <h3>Lentes de contato</h3>
+              <p>Orientação para pacientes que usam ou desejam avaliar o uso de lentes de contato.</p>
+              <a href="https://wa.me/5527996522668?text=Oi%2C%20quero%20agendar%20uma%20consulta%20com%20a%20Dra.%20Sylvia." target="_blank" rel="noopener">Agendar avaliação</a>
+            </article>
+
+            <article class="service-card reveal">
+              <span class="service-icon">!</span>
+              <h3>Urgência ocular</h3>
+              <p>Atendimento para dor forte nos olhos, perda súbita de visão, trauma ocular, olho vermelho ou secreção intensa.</p>
+              <a href="https://wa.me/5527996522668?text=Oi%2C%20quero%20agendar%20uma%20consulta%20com%20a%20Dra.%20Sylvia." target="_blank" rel="noopener">Falar no WhatsApp</a>
+            </article>
+
+            <article class="service-card reveal">
+              <span class="service-icon">+</span>
+              <h3>Outro atendimento</h3>
+              <p>Se você tem outra necessidade oftalmológica, fale com a equipe para receber a orientação adequada.</p>
+              <a href="https://wa.me/5527996522668?text=Oi%2C%20quero%20agendar%20uma%20consulta%20com%20a%20Dra.%20Sylvia." target="_blank" rel="noopener">Agendar avaliação</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Prevenção e cuidado</p>
+            <h2>Por que cuidar da visão regularmente?</h2>
+            <p>
+              Muitos problemas de visão podem evoluir de forma silenciosa. O acompanhamento oftalmológico ajuda a
+              identificar alterações, orientar cuidados e preservar sua qualidade de vida.
+            </p>
           </div>
 
           <div class="benefit-grid">
-            <article class="benefit-card reveal">
-              <span class="icon-badge" aria-hidden="true">01</span>
-              <h3>Agendamento fácil pelo WhatsApp</h3>
-              <p>Você não precisa ligar nem esperar. Chame no WhatsApp e organize sua consulta de forma simples.</p>
-            </article>
-            <article class="benefit-card reveal">
-              <span class="icon-badge" aria-hidden="true">02</span>
-              <h3>Lembrete antes da consulta</h3>
-              <p>Você recebe um lembrete antes do horário marcado para não esquecer do compromisso.</p>
-            </article>
-            <article class="benefit-card reveal">
-              <span class="icon-badge" aria-hidden="true">03</span>
-              <h3>Retornos mais organizados</h3>
-              <p>Quando for hora de voltar, a clínica pode te lembrar para manter seu cuidado em dia.</p>
-            </article>
-            <article class="benefit-card reveal">
-              <span class="icon-badge" aria-hidden="true">04</span>
-              <h3>Atendimento mais claro</h3>
-              <p>Você recebe as informações necessárias com praticidade e sem complicação.</p>
-            </article>
+            <div class="benefit-card reveal"><strong>Prevenção</strong><span>Acompanhamento para identificar alterações antes que tragam maior impacto.</span></div>
+            <div class="benefit-card reveal"><strong>Diagnóstico precoce</strong><span>Avaliação profissional para investigar sinais e sintomas com responsabilidade.</span></div>
+            <div class="benefit-card reveal"><strong>Saúde dos olhos</strong><span>Cuidado regular para visão embaçada, dor, ardência ou dificuldade para enxergar.</span></div>
+            <div class="benefit-card reveal"><strong>Orientação individualizada</strong><span>Explicações claras e cuidado adequado às necessidades de cada paciente.</span></div>
           </div>
         </div>
       </section>
 
-      <section class="section services-section" id="tratamentos" aria-labelledby="tratamentos-title">
+      <section id="sobre" class="section">
+        <div class="container about-grid">
+          <div class="about-image reveal">
+            <div class="photo-placeholder">
+              <span>[Foto profissional da Dra. Sylvia]</span>
+            </div>
+          </div>
+          <div class="about-copy reveal">
+            <p class="eyebrow">Sobre a médica</p>
+            <h2>Sobre a Dra. Sylvia Passamani</h2>
+            <p>
+              Dra. Sylvia Renata Passamani é médica oftalmologista formada pela EMESCAM em 1994, com mais de 20 anos
+              de experiência e atuação em Vitória e região.
+            </p>
+            <p>
+              Atua em oftalmologia geral, oftalmopediatria, cirurgia de miopia e catarata, além de possuir
+              especialização em medicina de tráfego. Seu atendimento é descrito pela clínica como humano, acolhedor,
+              ético e focado na prevenção, diagnóstico e acompanhamento da saúde ocular.
+            </p>
+            <ul class="about-list">
+              <li>Atendimento humanizado e acolhedor</li>
+              <li>Localização de fácil acesso</li>
+              <li>Ambiente organizado e confortável</li>
+              <li>Facilidade de contato e agendamento pelo WhatsApp</li>
+            </ul>
+            <a class="button button-primary" href="https://wa.me/5527996522668?text=Oi%2C%20quero%20agendar%20uma%20consulta%20com%20a%20Dra.%20Sylvia." target="_blank" rel="noopener">
+              Agendar consulta
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="fotos" class="section section-soft">
         <div class="container">
           <div class="section-heading reveal">
-            <p class="eyebrow">Tratamentos odontológicos</p>
-            <h2 id="tratamentos-title">Cuidado para cada momento do seu sorriso</h2>
-            <p>Escolha o tratamento e fale com a clínica para receber orientação e encontrar o melhor horário.</p>
+            <p class="eyebrow">Galeria</p>
+            <h2>Conheça nossa estrutura e atendimento</h2>
+            <p>Veja alguns espaços previstos para registros reais do ambiente, da estrutura e dos cuidados oferecidos.</p>
           </div>
 
-          <div class="services-grid">
-            <article class="service-card reveal">
-              <h3>Avaliação odontológica</h3>
-              <p>Entenda o que seu sorriso precisa com uma avaliação cuidadosa e orientação clara.</p>
-            </article>
-            <article class="service-card reveal">
-              <h3>Limpeza</h3>
-              <p>Mais saúde, frescor e leveza para o seu sorriso no dia a dia.</p>
-            </article>
-            <article class="service-card reveal">
-              <h3>Clareamento</h3>
-              <p>Realce a beleza do seu sorriso com mais brilho, confiança e autoestima.</p>
-            </article>
-            <article class="service-card reveal">
-              <h3>Manutenção de aparelho</h3>
-              <p>Acompanhe a evolução do seu tratamento com cuidado e regularidade.</p>
-            </article>
-            <article class="service-card reveal">
-              <h3>Implante dentário</h3>
-              <p>Volte a sorrir, mastigar e conversar com mais segurança.</p>
-            </article>
-            <article class="service-card reveal">
-              <h3>Urgência odontológica</h3>
-              <p>Está com dor ou desconforto? Fale com a clínica e busque atendimento.</p>
-            </article>
-            <article class="service-card reveal">
-              <h3>Retorno e acompanhamento</h3>
-              <p>Continue seu cuidado com lembretes e acompanhamento para não perder o momento certo de voltar.</p>
-            </article>
+          <div class="gallery-grid">
+            <figure class="gallery-card gallery-card-large reveal">
+              <div class="gallery-placeholder">[Foto da Dra. Sylvia]</div>
+              <figcaption>Atendimento oftalmológico</figcaption>
+            </figure>
+            <figure class="gallery-card reveal">
+              <div class="gallery-placeholder">[Foto da sala de atendimento]</div>
+              <figcaption>Estrutura da clínica</figcaption>
+            </figure>
+            <figure class="gallery-card reveal">
+              <div class="gallery-placeholder">[Foto dos equipamentos]</div>
+              <figcaption>Equipamentos</figcaption>
+            </figure>
+            <figure class="gallery-card reveal">
+              <div class="gallery-placeholder">[Foto da recepção]</div>
+              <figcaption>Recepção</figcaption>
+            </figure>
+            <figure class="gallery-card reveal">
+              <div class="gallery-placeholder">[Foto da estrutura da clínica]</div>
+              <figcaption>Cuidado humanizado</figcaption>
+            </figure>
           </div>
         </div>
       </section>
 
-      <section class="section location-section" id="localizacao" aria-labelledby="localizacao-title">
-        <div class="container location-layout">
+      <section class="mid-cta">
+        <div class="container mid-cta-inner reveal">
+          <div>
+            <p class="eyebrow">Agendamento pelo WhatsApp</p>
+            <h2>Está na hora de cuidar melhor da sua visão?</h2>
+            <p>Fale com o atendimento da clínica pelo WhatsApp e verifique os horários disponíveis para consulta com a Dra. Sylvia.</p>
+          </div>
+          <a class="button button-light" href="https://wa.me/5527996522668?text=Oi%2C%20quero%20agendar%20uma%20consulta%20com%20a%20Dra.%20Sylvia." target="_blank" rel="noopener">
+            Quero agendar pelo WhatsApp
+          </a>
+        </div>
+      </section>
+
+      <section id="localizacao" class="section">
+        <div class="container location-grid">
           <div class="location-copy reveal">
-            <p class="eyebrow">Localização central</p>
-            <h2 id="localizacao-title">Estamos no Centro de Vitória</h2>
-            <p>Rua Alberto Oliveira Santos, 42 — Centro, Vitória/ES</p>
-            <ul class="location-list">
-              <li>Horário de atendimento: 8h às 17h</li>
-              <li>Estacionamento disponível</li>
-              <li>Comunicação rápida pelo WhatsApp</li>
+            <p class="eyebrow">Localização</p>
+            <h2>Onde estamos</h2>
+            <p><strong>Rua Graciano Neves, 73. Centro - Vitória/ES.</strong></p>
+            <p>Ed. Lea, sala 505. Em cima da loja O Boticário.</p>
+            <p>Entrada pela recepção do edifício, elevador à esquerda, 5º andar.</p>
+            <ul class="info-list">
+              <li>Estacionamento rotativo nas ruas próximas</li>
+              <li>Localização central em Vitória/ES</li>
+              <li>Consulte a seção de horários para ver os dias de atendimento da Dra. Sylvia</li>
             </ul>
-            <div class="location-actions">
-              <a class="button button-primary" href="https://maps.google.com/?q=Rua+Alberto+Oliveira+Santos,+42,+Centro,+Vitória,+ES" target="_blank" rel="noopener">Abrir no Google Maps</a>
-            </div>
+            <a class="button button-secondary" href="https://maps.app.goo.gl/pfcDyHCfAD7dyBkD9?g_st=ac" target="_blank" rel="noopener">
+              Abrir no Google Maps
+            </a>
           </div>
           <div class="map-card reveal">
             <iframe
-              title="Mapa da Clínica Dr. Fernando Pimentel"
-              src="https://www.google.com/maps?q=Rua+Alberto+Oliveira+Santos,+42,+Centro,+Vitória,+ES&output=embed"
+              title="Mapa da Clínica Oftalmológica Dra. Sylvia Passamani"
+              src="https://www.google.com/maps?q=Rua%20Graciano%20Neves%2C%2073%2C%20Centro%2C%20Vit%C3%B3ria%2C%20ES&output=embed"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
@@ -188,103 +251,133 @@
         </div>
       </section>
 
-      <section class="section testimonials-section" aria-labelledby="depoimentos-title">
+      <section id="horarios" class="section section-soft">
         <div class="container">
           <div class="section-heading reveal">
-            <p class="eyebrow">Experiências de pacientes</p>
-            <h2 id="depoimentos-title">Confiança também nasce nos detalhes</h2>
+            <p class="eyebrow">Agenda da médica</p>
+            <h2>Atendimento da Dra. Sylvia</h2>
+            <p>Horários informados pela clínica para consultas com a Dra. Sylvia Passamani.</p>
           </div>
 
-          <div class="testimonials-grid">
-            <!-- Replace these placeholder testimonials with real patient testimonials before production. -->
-            <blockquote class="testimonial-card reveal">
-              <p>“Consegui agendar pelo WhatsApp de forma rápida e fui lembrada antes da consulta. Isso me ajudou muito.”</p>
-              <cite>Mariana S.</cite>
-            </blockquote>
-            <!-- Replace these placeholder testimonials with real patient testimonials before production. -->
-            <blockquote class="testimonial-card reveal">
-              <p>“Gostei do cuidado no atendimento e da facilidade para marcar o horário.”</p>
-              <cite>Carlos M.</cite>
-            </blockquote>
-            <!-- Replace these placeholder testimonials with real patient testimonials before production. -->
-            <blockquote class="testimonial-card reveal">
-              <p>“A clínica passa confiança. Foi tudo simples, desde o agendamento até o atendimento.”</p>
-              <cite>Renata A.</cite>
-            </blockquote>
-            <!-- Replace these placeholder testimonials with real patient testimonials before production. -->
-            <blockquote class="testimonial-card reveal">
-              <p>“Localização fácil, atendimento organizado e comunicação clara.”</p>
-              <cite>João P.</cite>
-            </blockquote>
+          <div class="schedule-grid reveal">
+            <article class="schedule-card">
+              <span>Segunda-feira</span>
+              <strong>8h às 11h40</strong>
+              <strong>14h às 18h</strong>
+            </article>
+            <article class="schedule-card">
+              <span>Terça-feira</span>
+              <strong>8h às 11h40</strong>
+              <strong>14h às 18h</strong>
+            </article>
+            <article class="schedule-card schedule-card-short">
+              <span>Quinta-feira</span>
+              <strong>8h às 12h</strong>
+            </article>
+            <article class="schedule-card schedule-card-muted">
+              <span>Quarta-feira</span>
+              <strong>Sem atendimento</strong>
+            </article>
+            <article class="schedule-card schedule-card-muted">
+              <span>Sexta-feira</span>
+              <strong>Sem atendimento</strong>
+            </article>
           </div>
+
+          <p class="schedule-note reveal">
+            Pausa de almoço: 12h às 14h. Agendamentos para o mesmo dia dependem de autorização do consultório.
+          </p>
         </div>
       </section>
 
-      <section class="section faq-section" id="faq" aria-labelledby="faq-title">
-        <div class="container faq-layout">
+      <section class="section">
+        <div class="container faq-wrap">
           <div class="section-heading reveal">
             <p class="eyebrow">Dúvidas frequentes</p>
-            <h2 id="faq-title">Antes de agendar</h2>
-            <p>Se ainda tiver alguma dúvida, fale com a clínica pelo WhatsApp.</p>
+            <h2>FAQ</h2>
           </div>
+
           <div class="faq-list reveal">
             <details>
-              <summary>Como faço para agendar?</summary>
-              <p>Clique no botão de WhatsApp, envie uma mensagem e escolha o melhor horário disponível.</p>
+              <summary>Como faço para agendar uma consulta?</summary>
+              <p>Você pode agendar diretamente pelo WhatsApp clicando em qualquer botão de agendamento da página.</p>
             </details>
             <details>
-              <summary>A clínica aceita plano odontológico?</summary>
-              <p>No momento, a clínica não aceita plano odontológico. Para mais informações, entre em contato pelo WhatsApp.</p>
+              <summary>A clínica atende por convênio?</summary>
+              <p>Segundo as informações da clínica, o atendimento aceita Unimed e particular.</p>
             </details>
             <details>
-              <summary>A clínica atende crianças?</summary>
-              <p>Sim, o atendimento é realizado para crianças a partir de 5 anos.</p>
+              <summary>Quais procedimentos a Dra. Sylvia realiza?</summary>
+              <p>As opções informadas são consulta oftalmológica, acompanhamento de glaucoma, lentes de contato, urgência ocular e outro atendimento oftalmológico.</p>
+            </details>
+            <details>
+              <summary>Preciso levar exames anteriores?</summary>
+              <p>Sim. A clínica orienta levar receitas antigas, caso tenha. Pacientes que usam lentes de contato devem seguir a orientação de retirada antes da consulta.</p>
+            </details>
+            <details>
+              <summary>Como funciona o retorno?</summary>
+              <p>Retorno depende do motivo. Conforme informado pela clínica, sem custo apenas até 30 dias da última consulta. Retorno de óculos precisa de avaliação prévia.</p>
             </details>
             <details>
               <summary>Onde fica a clínica?</summary>
-              <p>A clínica fica na Rua Alberto Oliveira Santos, 42 — Centro, Vitória/ES.</p>
+              <p>A clínica fica na Rua Graciano Neves, 73, Centro, Vitória/ES, Ed. Lea, sala 505.</p>
             </details>
             <details>
-              <summary>Recebo lembrete da consulta?</summary>
-              <p>Sim. Você pode receber lembretes antes da consulta e também lembretes de retorno, ajudando a manter seu cuidado em dia.</p>
+              <summary>O atendimento é pelo WhatsApp?</summary>
+              <p>Sim. O WhatsApp facilita o contato para agendamento, remarcação, cancelamento e dúvidas sobre o atendimento.</p>
             </details>
             <details>
-              <summary>Posso remarcar pelo WhatsApp?</summary>
-              <p>Sim. Você pode solicitar a remarcação pelo WhatsApp de forma simples.</p>
+              <summary>Quais são as formas de pagamento?</summary>
+              <p>A clínica informou Pix, dinheiro, cartão de débito e cartão de crédito. Outras informações devem ser confirmadas com a equipe.</p>
             </details>
           </div>
         </div>
       </section>
 
-      <section class="final-cta" aria-labelledby="final-cta-title">
-        <div class="container final-cta-content reveal">
-          <h2 id="final-cta-title">Seu sorriso pode começar a mudar com uma simples mensagem</h2>
-          <p>
-            Não deixe o cuidado com você para depois. Agende sua consulta pelo WhatsApp e dê o próximo passo para
-            um sorriso mais saudável, bonito e confiante.
-          </p>
+      <!-- TODO: inserir depoimentos reais autorizados antes de publicar uma seção de avaliações. -->
+
+      <section id="agendar" class="final-cta">
+        <div class="container final-cta-inner reveal">
+          <h2>Agende sua consulta com a Dra. Sylvia Passamani</h2>
+          <p>Entre em contato pelo WhatsApp e veja os horários disponíveis para cuidar da sua saúde ocular.</p>
+          <a class="button button-primary" href="https://wa.me/5527996522668?text=Oi%2C%20quero%20agendar%20uma%20consulta%20com%20a%20Dra.%20Sylvia." target="_blank" rel="noopener">
+            Agendar agora
+          </a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
+      <div class="container footer-brand-wide">
+        <img src="assets/logo_dra_2.png" alt="Marca da Dra. Sylvia Passamani" />
+      </div>
       <div class="container footer-grid">
-        <div>
-          <img class="footer-logo" src="assets/logo-fernando-pimentel.svg" alt="Clínica Dr. Fernando Pimentel" />
-          <p>As informações enviadas pelo WhatsApp são usadas apenas para atendimento e agendamento.</p>
-        </div>
         <address>
-          <strong>Clínica Dr. Fernando Pimentel</strong><br />
-          Rua Alberto Oliveira Santos, 42 — Centro, Vitória/ES<br />
-          Horário: 8h às 17h
+          <strong>Dra. Sylvia Passamani</strong><br />
+          Oftalmologista<br />
+          WhatsApp: (27) 99652-2668<br />
+          Rua Graciano Neves, 73. Centro - Vitória/ES<br />
+          Atendimento da Dra. Sylvia: segunda e terça, 8h às 11h40 e 14h às 18h; quinta, 8h às 12h
         </address>
+        <nav class="footer-links" aria-label="Links do rodapé">
+          <a href="#inicio">Início</a>
+          <a href="#procedimentos">Procedimentos</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#fotos">Fotos</a>
+          <a href="#localizacao">Localização</a>
+          <a href="#agendar">Agendar</a>
+        </nav>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Dra. Sylvia Passamani. Todos os direitos reservados.</span>
+        <span>As informações enviadas pelo WhatsApp são usadas apenas para atendimento e agendamento.</span>
       </div>
     </footer>
 
-    <a class="floating-whatsapp" href="https://wa.me/5527996522668?text=Olá,%20quero%20agendar%20uma%20consulta" target="_blank" rel="noopener" aria-label="Agendar minha consulta pelo WhatsApp">
-      Agendar consulta no WhatsApp
+    <a class="floating-whatsapp" href="https://wa.me/5527996522668?text=Oi%2C%20quero%20agendar%20uma%20consulta%20com%20a%20Dra.%20Sylvia." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+      <img src="assets/wpp_clean.png" alt="" aria-hidden="true" />
     </a>
 
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
   </body>
 </html>
